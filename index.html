@@ -7,7 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    /* === Global Styles === */
 
+</style>
 </head>
 <body>
 <header>
@@ -45,20 +48,20 @@
 <section id="home" class="section hero">
     <div class="hero-container">
         <div class="hero-content">
-            <h1>Mark Jade R. Oxima</h1>
+            <h1>Cape Baldy Coder</h1>
             <p>Building modern, scalable, and aesthetically pleasing web<br>
                 applications with seamless front-end and back-end integration.</p>
             <a href="#projects" class="btn">Explore My Work</a>
         </div>
         <div class="hero-image">
-            <img src="icon.png" alt="Mark Jade Oxima" class="profile-img">
+            <img src="225-2256539_one-punch-man-chibi-saitama-anime-manga-png-one-punch-man-removebg-preview.png" alt="Mark Jade Oxima" class="profile-img">
         </div>
     </div>
 </section>
 <section id="about" class="section">
     <div class="about-container">
         <div class="about-image">
-            <img src="icon.png" alt="Mark Jade Oxima">
+            <img src="225-2256539_one-punch-man-chibi-saitama-anime-manga-png-one-punch-man-removebg-preview.png" alt="Mark Jade Oxima">
         </div>
         <div class="about-content">
             <h2 class="section-title">About Me</h2>
@@ -69,7 +72,7 @@
             </p>
             <p class="about-text">
                 My expertise spans across front-end and back-end development, leveraging technologies like 
-                <span class="highlight">React, Node.js, Flask,</span> and integrating IoT solutions using ESP32 and Arduino. 
+                <span class="highlight">React, Node.js, Flask</span> and integrating IoT solutions using ESP32 and Arduino. 
                 Currently, I’m focused on AI applications, particularly <span class="highlight">computer vision with YOLO</span> for object detection.
             </p>
 
@@ -83,13 +86,14 @@
                 </ul>
                 <ul>
                     <li><i class="fas fa-code"></i> <strong>Expertise:</strong> Full-Stack Development, IoT, AI</li>
-                    <li><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/jadeoxima" target="_blank">https://github.com/jadeoxima</a></li>
-                    <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourlinkedin" target="_blank">N/A</a></li>
+                    <li><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/jadeoxima" target="_blank">github.com/jadeoxima</a></li>
+                    <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <span style="color: #999;">N/A</span></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Skills Section -->
 <section id="skills" class="section">
@@ -193,11 +197,22 @@
     <p class="contact-description">Let's build something amazing together! Feel free to reach out.</p>
     
     <div class="contact-container">
-       <form id="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
+    <form id="contact-form">
+  <div class="input-group">
+    <input type="text" name="name" placeholder=" " required />
+    <label>Your Name</label>
+  </div>
+  <div class="input-group">
+    <input type="email" name="email" placeholder=" " required />
+    <label>Your Email</label>
+  </div>
+  <div class="input-group">
+    <textarea name="message" placeholder=" " required></textarea>
+    <label>Your Message</label>
+  </div>
+  <button type="submit">Send Message</button>
+</form>
+
 </form>
 
 </section>
@@ -205,7 +220,7 @@
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
-}
+}</script>
 <script type="module" src="contactForm.js"></script>
 
 
